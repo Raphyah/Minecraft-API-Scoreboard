@@ -90,7 +90,7 @@ export const getValue = ( target, key ) => {
   }
 }
 
-export const kick = ( target, key ) => {
+export const drop = ( target, key ) => {
   try {
     const objective = world.scoreboard.getObjective(key);
     if (!objective) return;
@@ -108,7 +108,7 @@ export const kick = ( target, key ) => {
 }
 
 const Scoreboard = {
-  setValue, addValue, subValue, randomValue, getValue, kick,
+  setValue, addValue, subValue, randomValue, getValue, drop,
 };
 
 export default Scoreboard;
